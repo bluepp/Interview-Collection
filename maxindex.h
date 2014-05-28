@@ -6,3 +6,11 @@ function的时候，random输出5，6，7.
 source: http://www.mitbbs.com/article_t/JobHunting/32701375.html
 Facebook tel
 */
+
+
+/* 输入数组是无序的，我给的是下面的方法
+
+先scan 一遍，找出最大数max和出现的次数n
+然后生成一个随机数m，between 1 to n
+然后在scan一遍，找到第m个max，输出idx
+*/
