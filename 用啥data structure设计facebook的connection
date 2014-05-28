@@ -1,0 +1,32 @@
+/* 
+  2014-05-28
+  bluepp
+  May the force be with me
+  */
+  
+/*
+  source : http://www.mitbbs.com/article_t/JobHunting/32704731.html
+  G tel
+  */
+  
+/*
+
+用啥data structure设计facebook的connection。（how about twitter)
+
+接着讨论facebook的各层connection之间的一些逻辑关系，比如第三层connection肯定
+不会直接连到第一层或者本人。怎么给同一层的connection排序（应该推荐那些）
+
+之后让写code，提供得到first level connection的函数，让实现得到second level 
+connection。定义需要的相关class （比如people)。
+*/
+
+/*
+没用queue。
+就直接调用getFirstLevel(Person input)得到一个HashSet<Person>();
+
+然后iterate through first level里的person, 对每一个再调用getFirstLevel()得到
+second level connections加入另一个HashSet. (这里得注意filter)
+*/
+  
+  
+    
