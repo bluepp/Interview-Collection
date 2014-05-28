@@ -21,3 +21,22 @@ G tel
 应该碰到９以下就ｓｔｏｐ．修改．
 对方对我把最后一位单独拎出来也不满意，说放ｌｏｏｐ里面．我自己觉得是小问题．
 */
+
+/* ?
+https://oj.leetcode.com/problems/plus-one/
+*/
+
+/*
+Maybe he wanted this:
+
+void plusOne(vector<int> & A) {
+  int i = (int)A.size() - 1;
+  while (i >= 0 && A[i] == 9)
+      A[i--] = 0;
+
+  if (i >= 0)   
+      ++A[i];
+  else
+      A.insert(A.begin(), 1);
+}
+*/
