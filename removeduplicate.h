@@ -78,7 +78,27 @@
 
 
 
+-------------------------
 
+void removeDup(string & str) {
+    
+    int tail = -1; 
+    
+    for (int i = 0; i < str.size(); ) 
+    { 
+        if (tail < 0 || str[i] != str[tail])
+        {
+            str[++tail] = str[i++];
+        } else 
+        {
+            --tail;
+            while(str[i] == str[tail + 1])
+                ++i;
+        }   
+    }
+
+    str.resize(tail+1);
+}
 
 
 
