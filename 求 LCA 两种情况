@@ -6,3 +6,45 @@
   
   求 LCA 两种情况，有parent结点跟没有parent的结点的情况都要回答
 */  
+
+Node *LCA(Node *root, Node *p, Node *q) {
+  if (!root) return NULL;
+  if (root == p || root == q) return root;
+  Node *L = LCA(root->left, p, q);
+  Node *R = LCA(root->right, p, q);
+  if (L && R) return root;  // if p and q are on both sides
+  return L ? L : R;  // either one of p,q is on one side OR p,q is not in L&R subtrees
+}
+
+
+//--
+
+int getHeight(Node *p) {
+  int height = 0;
+  while (p) {
+    height++;
+    p = p->parent;
+  }
+  return height;
+}
+ 
+// As root->parent is NULL, we don't need to pass root in.
+Node *LCA(Node *p, Node *q) {
+  int h1 = getHeight(p);
+  int h2 = getHeight(q);
+  // swap both nodes in case p is deeper than q.
+  if (h1 > h2) {
+    swap(h1, h2);
+    swap(p, q);
+  }
+  // invariant: h1 <= h2.
+  int dh = h2 - h1;
+  for (int h = 0; h < dh; h++)
+    q = q->parent;
+  while (p && q) {
+    if (p == q) return p;
+    p = p->parent;
+    q = q->parent;
+  }
+  return NULL;  // p and q are not in the same tree
+}
