@@ -1,0 +1,8 @@
+/*
+  2014-08-25
+  bluepp
+  May the force be with me!
+  
+  
+  求 LCA 两种情况，有parent结点跟没有parent的结点的情况都要回答
+*/  
