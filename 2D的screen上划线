@@ -1,0 +1,11 @@
+/*
+  2014-08-25
+  bluepp
+  May the force be with me!
+
+
+http://www.mitbbs.com/mitbbs_article_t.php?board=JobHunting&gid=32517841&ftype=0
+2D的screen上划线(x1, y) 到 (x2,y)，其中知道screen的宽W，高H。每
+个坐标(x, y)对应memory的一个bit，给定memory的初始地址，写代码实现
+
+*/
