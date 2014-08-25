@@ -1,0 +1,13 @@
+/* 
+  2014-08-25
+  bluepp
+  May the force be with me!
+  
+
+  http://www.mitbbs.com/mitbbs_article_t.php?board=JobHunting&gid=32517841&ftype=0
+  
+  how to create an object to a specific memory location; what's the
+  difference with regular new and replacement new; why use replacement new, 
+  not type cast directly
+  
+*/  
