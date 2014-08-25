@@ -1,0 +1,7 @@
+/*
+  2014-08-25
+  bluepp
+  May the force be with me!
+
+  Given a matrix, 每个格子是doors 或 rooms, 算出每个room的到door的最短距离（任何一个门）
+*/  
