@@ -1,0 +1,11 @@
+/* 
+  2014-08-25
+  bluepp
+  May the force be with me!
+
+  http://www.mitbbs.com/mitbbs_article_t.php?board=JobHunting&gid=32517841&ftype=0
+  
+  Given a integer array, test if there is any consequel subarray 
+  which sum of elements is 0.
+  [7, 1, 1, -2, 3, 4] ==> true [1, 1, -1]
+*/  
