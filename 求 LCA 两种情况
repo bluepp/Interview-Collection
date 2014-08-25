@@ -48,3 +48,21 @@ Node *LCA(Node *p, Node *q) {
   }
   return NULL;  // p and q are not in the same tree
 }
+
+// hashset
+Node *LCA(Node *root, Node *p, Node *q) {
+  hash_set<Node *> visited;
+  while (p || q) {
+    if (p) {
+      if (!visited.insert(p).second)
+        return p; // insert p failed (p exists in the table)
+      p = p->parent;
+    }
+    if (q) {
+      if (!visited.insert(q).second)
+        return q; // insert q failed (q exists in the table)
+      q = q->parent;
+    }
+  }
+  return NULL;
+}
