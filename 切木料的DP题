@@ -1,0 +1,12 @@
+/*
+  2014-08-29
+  bluepp
+  May the force be with you!
+  
+  http://www.mitbbs.com/article_t/JobHunting/32685379.html
+  
+  有一个长为L的木料需要割开，切的位置在一个数组里A[0...N]，从一个地方切开的
+  cost是当前所切木料的长度。按不同的顺序切割，得到的total cost是不一样的，问怎
+  么切cost最 小
+*/  
+ 
