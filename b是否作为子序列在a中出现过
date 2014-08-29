@@ -1,0 +1,10 @@
+/*
+  bluepp
+  2014-08-29
+  May the force be with me!
+  
+  http://www.mitbbs.com/article_t1/JobHunting/32764769_0_1.html
+  
+  给两个整数a，b，长度分别为n和m，m《=n，问b是否作为子序列在a中出现过，如果
+  是，输出起始的digit位置。空间和时间复杂度要求 O（log（m+n））
+*/  
