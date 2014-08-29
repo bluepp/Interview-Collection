@@ -1,0 +1,11 @@
+/*
+  2014-08-29
+  bluepp 
+  May the force be with you!
+  
+  http://www.mitbbs.com/article_t/JobHunting/32765485.html
+  Return the most frequent char in a string, which is UFT-8 encoded.
+
+这个只能用hashtable统计了吧，还有什么trick吗？
+*/
+
