@@ -1,0 +1,10 @@
+/*
+  2014-08-29
+  bluepp
+  May the force be with me!
+  
+  http://www.mitbbs.com/article_t1/JobHunting/32748585_0_1.html
+  
+  给定一些不相交的区间和一个新的区间，要求合并起来
+  但问题是不让用新的vector/stack，也就是说要用constant additional space
+*/  
