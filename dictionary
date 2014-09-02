@@ -1,0 +1,14 @@
+/*
+2014-09-02
+bluepp
+May the force be with me!
+
+http://www.mitbbs.com/article_t/JobHunting/32772275.html
+
+问了一个就是dictionary的题：
+给一个dictionary：“hello","world","opt","pot";
+一个target： "pto",找出dictionary中的"opt" 和"pot"
+
+*/
+
+第一题就是pre-processing找anagrams
