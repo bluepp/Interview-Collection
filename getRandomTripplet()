@@ -32,3 +32,11 @@ The string is not known you are only given length of the string.
 
 据说是FB的phone interview
 
+------------------
+
+给你一个password 假定6位， 
+有个function 每call 一次就给你一个triplet 是password 里的随即三位，order不变
+。比如google, 可能返回， ggl, goe, oog, ool, ........
+问如何最有效破译这个密码，写code. 
+
+
