@@ -1,0 +1,14 @@
+/*
+2014-09-02
+bluepp
+May the force be with me!
+
+http://www.mitbbs.com/article_t/JobHunting/32772275.html
+
+第二题：
+给一对票，分别代表出发站和终点站
+b-c,c-d,a-b,d-e
+排序：
+a-b,b-c,c-d,d-e
+
+*/
