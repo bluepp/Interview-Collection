@@ -1,0 +1,33 @@
+/*
+2014-09-03
+bluepp
+May the force be with me!
+
+http://www.mitbbs.com/article_t1/JobHunting/32692253_0_3.html
+
+这问题是个很基本的东西，MINHEAP和MAXHEAP都可以。基本就是有N个ITEM，找其中的
+TOP K的问题。
+- 用MINHEAP的话，空间复杂度是O（K）， 时间复杂度是O（NlogK）。
+   这个方法适用于当数据不能PRELOAD进MEMORY，比如说数据是从一个STREAM来的。你
+就是先建立一个大小是K的MINHEAP， 在ROOT的就是最小的，其他K-1个都比ROOT大，然
+后从省下的N-K个里一个一个取，和你的ROOT比较，如果比ROOT小的就丢掉，比ROOT大
+的就REPLACE ROOT，然后将其 SIFT DOWN。
+－ 用MAXHEAP的话，空间复杂度是O（N）， 时间复杂度是 O（KlogN）。
+   这个办法只能用在N不是太大的时候，可以先HEAPIFY，用时O（N）。现在你的ROOT
+是最大的，把ROOT拿掉放进你的RESULT里，你的HEAP的ROOT空了，把最后一个元素放进
+ROOT，SIFT DOWN， 又得到一个MAXHEAP，重复刚才的操作K次，得到你的RESULT.
+
+两种方法都没错，而且也不一定哪个就更好，就算光是看时间复杂度，NlogK和KlogN哪
+个好也要看你的K和N是多大。
+
+*/
+
+
+min-heap: k + (n-k)logk
+max-heap: n + klogn
+
+除非k很大，否则max-heap当然更快
+
+-----------
+
+关键是n很大，maxheap的空间要求是n，minheap空间只要k
