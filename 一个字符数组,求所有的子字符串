@@ -1,0 +1,20 @@
+/* 
+  2014-09-10
+  bluepp
+  May the force be with me!
+
+http://www.mitbbs.com/article_t/JobHunting/32728009.html
+
+一个字符串,一个字符数组,求所有的子字符串,子字符串不能包括字符数组里面的所
+有元素.
+abbc, [a,b,c] ->  a, b, c, ab, abb, bbc, bb, bc
+
+有什么好思路？
+
+单机没有好思路，貌似就一边生成一边过滤。不过建议和面试官讨论多机环境下map 
+reduce->对字符数组中的每个元素（应该可以assume无重复），map到子问题：从字符
+串生成所有不包含此元素的子串->再reduce。我觉得我要是面试官会想听到这个思路。
+
+===》makes sense. 单机没有好办法了？
+
+*/
