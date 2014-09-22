@@ -13,3 +13,20 @@ and turn it into a tree with left leaf nodes.
 https://github.com/yxjiang/algorithms/blob/master/src/main/java/algorithm/linkedin/UpsideDownBinaryTree.java
 
 */
+
+
+
+    TreeNode dfs(TreeNode node, TreeNode parent){
+        if(node==null) return null;
+        TreeNode left_res = dfs(node.left,node);
+        
+        if(parent!=null){
+            node.left = parent.right;
+            node.right = parent;
+        }
+        return left_res!=null?left_res:node;
+    }
+    
+    TreeNode convert(TreeNode root){
+        return dfs(root,null);
+    }
