@@ -36,7 +36,8 @@
             if (n % i) continue;
             
             vec.push_back(i);
-            _factor(n/i, i, vec, res);
+            //_factor(n/i, i, vec, res);
+            _factor(n/i, min(i, n/i), vec, res);
             vec.pop_back();
         }
   }
