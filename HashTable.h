@@ -6,7 +6,8 @@
   Hash Table implementation.
 */
 
-C++ implementation
+/* http://www.algolist.net/Data_structures/Hash_table/Simple_example */
+/* C++ implementation */
 
 class HashEntry {
 private:
