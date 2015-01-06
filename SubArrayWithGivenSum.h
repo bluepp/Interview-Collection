@@ -1,6 +1,7 @@
 /*
   bluepp
   2014-12-24
+  2015-01-06
   May the froce be with me!
   
   Find subarray with given sum
@@ -17,6 +18,9 @@ Ouptut: Sum found between indexes 1 and 4
 Input: arr[] = {1, 4}, sum = 0
 Output: No subarray found
 There may be more than one subarrays with sum as the given sum. The following solutions print first such subarray.
+
+two solutions, 1, two pointer, with positive 2. hashmap
+
 */
 
 /* http://www.geeksforgeeks.org/find-subarray-with-given-sum/ */
@@ -53,5 +57,37 @@ int subArraySum(int arr[], int n, int sum)
  
     // If we reach here, then no subarray
     printf("No subarray found");
+    return 0;
+}
+
+/* 2015-01-06 */
+/* mitbbs, hashmap */
+/* http://www.mitbbs.com/article_t1/JobHunting/32838067_0_1.html */
+
+int sumarray(int a[], int n, int sum)
+{
+    int acc[];
+    
+    acc[0] = 0;
+    acc[1] = a[0];
+    for (int i = 2; i <= n; i++)
+    {
+        acc[i] = acc[i-1] + a[i-1];
+    }
+    
+    unordered_map<int, int> map;
+    
+    for (int i = 0; i <= n; i++)
+    {
+        if (map.find(acc[i]) == map.end())
+        {
+            map[acc[i]+sum] = i;
+        }
+        else
+        {
+            cout < "from map[acc[i]+sum], ... i";
+        }
+    }
+    
     return 0;
 }
